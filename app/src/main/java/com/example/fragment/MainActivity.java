@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         ListView earthquakeListView = (ListView) findViewById(R.id.list);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_activated_1,earthquakes);
+        EarthquakeAdapter adapter = new EarthquakeAdapter(this,earthquakes);
 
         earthquakeListView.setAdapter(adapter);
 
